@@ -9,15 +9,17 @@ import { HeroService } from './hero.service';
   templateUrl: 'dashboard.component.html',
   styleUrls: [ 'dashboard.component.css' ]
 })
+
+//dont knw the use
 export class DashboardComponent implements OnInit {
   heroes: Hero[] = [];
 
   constructor(private heroService: HeroService) { }
 
-//this is the function that identifies which heros needs to be displayed in dashboard 
+//i have modified this function to display all the heroes in grid view
   ngOnInit(): void {
     this.heroService.getHeroes()
-      .then(heroes => this.heroes = heroes.slice(0, 10));
+      .then(heroes => this.heroes = heroes.slice(0, 15));
   }
 }
 

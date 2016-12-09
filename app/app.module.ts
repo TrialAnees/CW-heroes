@@ -18,6 +18,7 @@ import { HeroDetailComponent }  from './hero-detail.component';
 import { HeroService }          from './hero.service';
 import { HeroSearchComponent }  from './hero-search.component';
 
+
 @NgModule({
   imports: [
     BrowserModule,
@@ -31,7 +32,7 @@ import { HeroSearchComponent }  from './hero-search.component';
     DashboardComponent,
     HeroDetailComponent,
     CWHeroesComponent,
-    HeroSearchComponent
+    HeroSearchComponent,
   ],
   providers: [ HeroService ],
   bootstrap: [ AppComponent ]

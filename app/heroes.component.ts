@@ -4,6 +4,8 @@ import { Router }            from '@angular/router';
 import { Hero }                from './hero';
 import { HeroService }         from './hero.service';
 
+//this file runs all the functions displayed in heroes.component.ts
+
 @Component({
   moduleId: module.id,
   selector: 'my-heroes',

@@ -5,8 +5,10 @@
     <div>
         <label>name: </label>
         <input [(ngModel)]="hero.name" placeholder="name" />
-        <p> {{hero.Details}} </p>
-
+       
+        <div><label>Description: </label>
+            <p>{{hero.Details}} </p>
+        </div>
     </div>
     <button (click)="goBack()">Back</button>
     <button (click)="save()">Save</button>

@@ -1,13 +1,17 @@
 <h2>My Heroes</h2>
 <div>
+    <!-- this is the template used to add new heroes -->
     <label>Hero name:</label> <input #heroName />
     <button (click)="add(heroName.value); heroName.value=''">
     Add
-  </button>
+    </button>
 </div>
-    <div>
+<div>
     <hero-search></hero-search>
-    </div>
+</div>
+
+<!-- used class in css to identify selected hero and also event defined when close button is clicked -->
+
 <ul class="heroes">
     <li *ngFor="let hero of heroes" (click)="onSelect(hero)" [class.selected]="hero === selectedHero">
         <span class="badge">{{hero.id}}</span>

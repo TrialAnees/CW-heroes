@@ -1,5 +1,9 @@
+/* this is the style definitions of the template in app.component.ts file
+every item in the template is displayed to all pages */
+
 h1 {
-    font-size: 1.2em;
+    font-size: 2.2em;
+    text-align: center;
     color: #999;
     margin-bottom: 0;
 }
@@ -14,6 +18,9 @@ div {
     margin-top: 0;
     padding-top: 0;
 }
+
+
+/* navigation tab in the template */
 
 nav a {
     padding: 5px 10px;
